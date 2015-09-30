@@ -13,16 +13,16 @@
  * @package           Mpress_Analytics
  *
  * @wordpress-plugin
- * Plugin Name:       Mpress Google Analytics
- * Plugin URI:        http://www.midwestdigitalmarketing.com
- * Description:       This is a short description of what the plugin does. It's displayed in the WordPress admin area.
- * Version:           1.0.2
- * Author:            Midwest Digital Marketing
- * Author URI:        http://www.midwestdigitalmarketing.com
- * License:           GPL-2.0+
- * License URI:       http://www.gnu.org/licenses/gpl-2.0.txt
- * Text Domain:       mpress-analytics
- * Domain Path:       /languages
+ * Plugin Name: Mpress Google Analytics
+ * Plugin URI: http://www.midwestdigitalmarketing.com
+ * Description: This is a short description of what the plugin does. It's displayed in the WordPress admin area.
+ * Version: 1.0.2
+ * Author: Midwest Digital Marketing
+ * Author URI: http://www.midwestdigitalmarketing.com
+ * License: GPL-2.0+
+ * License URI: http://www.gnu.org/licenses/gpl-2.0.txt
+ * Text Domain: mpress-analytics
+ * Domain Path: /languages
  */
 
 // If this file is called directly, abort.
@@ -65,7 +65,7 @@ function update_mpress_analytics() {
         'requires'              => '4.0',
         'tested'                => '4.3',
         'readme'                => 'README.md',
-        'access_token'          => '327d120010a4697ad8439c4b4e12b4a059072052'
+        'access_token'          => '69845f95168bff619d0f9e1c2794bff2a443fc2c'
     );
     $plugin_update = new WP_GitHub_Updater( $config );
     ob_start();
