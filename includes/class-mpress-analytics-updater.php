@@ -442,7 +442,7 @@ class WP_GitHub_Updater {
 if ( is_admin() ) {
     $config = array(
         'slug'                  => plugin_basename( __FILE__ ),
-        'proper_folder_name'    => 'mpress-user-profiles',
+        'proper_folder_name'    => 'Google-Analytics-Plugin',
         'api_url'               => 'https://api.github.com/repos/MDMDevOps/Google-Analytics-Plugin',
         'raw_url'               => 'https://github.com/MDMDevOps/Google-Analytics-Plugins',
         'github_url'            => 'https://github.com/MDMDevOps/Google-Analytics-Plugin',
