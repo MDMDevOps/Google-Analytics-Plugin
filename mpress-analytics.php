@@ -16,7 +16,7 @@
  * Plugin Name: Mpress Google Analytics
  * Plugin URI: http://www.midwestdigitalmarketing.com
  * Description: This is a short description of what the plugin does. It's displayed in the WordPress admin area.
- * Version: 1.1
+ * Version: 1.0.1
  * Author: Midwest Digital Marketing
  * Author URI: http://www.midwestdigitalmarketing.com
  * License: GPL-2.0+
@@ -53,23 +53,23 @@ function deactivate_mpress_analytics() {
  */
 function update_mpress_analytics() {
     require_once plugin_dir_path( __FILE__ ) . 'includes/class-mpress-analytics-updater.php';
-    define( 'WP_GITHUB_FORCE_UPDATE', true );
-    $config = array(
-        'slug'                  => plugin_basename( __FILE__ ),
-        'proper_folder_name'    => 'mpress-analytics',
-        'api_url'               => 'https://api.github.com/repos/MDMDevOps/Google-Analytics-Plugin',
-        'raw_url'               => 'https://github.com/MDMDevOps/Google-Analytics-Plugins',
-        'github_url'            => 'https://github.com/MDMDevOps/Google-Analytics-Plugin',
-        'zip_url'               => 'https://github.com/MDMDevOps/Google-Analytics-Plugin/archive/master.zip',
-        'sslverify'             => false,
-        'requires'              => '4.0',
-        'tested'                => '4.3',
-        'readme'                => 'README.md',
-        'access_token'          => '9d1f28fab29f3de3e169d56b462752072604d9d5'
-    );
-    $plugin_update = new WP_GitHub_Updater( $config );
-    ob_start();
-    print_r($plugin_update);
+    if ( is_admin() ) {
+        define( 'WP_GITHUB_FORCE_UPDATE', true );
+        $config = array(
+            'slug'                  => plugin_basename( __FILE__ ),
+            'proper_folder_name'    => 'mpress-analytics',
+            'api_url'               => 'https://api.github.com/repos/MDMDevOps/Google-Analytics-Plugin',
+            'raw_url'               => 'https://raw.github.com/MDMDevOps/Google-Analytics-Plugin/master',
+            'github_url'            => 'https://github.com/MDMDevOps/Google-Analytics-Plugin',
+            'zip_url'               => 'https://github.com/MDMDevOps/Google-Analytics-Plugin/archive/master.zip',
+            'sslverify'             => false,
+            'requires'              => '4.0',
+            'tested'                => '4.3',
+            'readme'                => 'README.md',
+            'access_token'          => ''
+        );
+        $plugin_update = new WP_GitHub_Updater( $config );
+    }
 }
 update_mpress_analytics();
 
@@ -98,3 +98,7 @@ function run_mpress_analytics() {
 
 }
 run_mpress_analytics();
+
+// Update Plugin
+
+

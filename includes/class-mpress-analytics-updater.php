@@ -438,23 +438,3 @@ class WP_GitHub_Updater {
 
     }
 }
-
-if ( is_admin() ) {
-    define( 'WP_GITHUB_FORCE_UPDATE', true );
-    $config = array(
-        'slug'                  => plugin_basename( __FILE__ ),
-        'proper_folder_name'    => 'mpress-analytics',
-        'api_url'               => 'https://api.github.com/repos/MDMDevOps/Google-Analytics-Plugin',
-        'raw_url'               => 'https://github.com/MDMDevOps/Google-Analytics-Plugins',
-        'github_url'            => 'https://github.com/MDMDevOps/Google-Analytics-Plugin',
-        'zip_url'               => 'https://github.com/MDMDevOps/Google-Analytics-Plugin/archive/master.zip',
-        'sslverify'             => false,
-        'requires'              => '4.0',
-        'tested'                => '4.3',
-        'readme'                => 'README.md',
-        'access_token'          => 'c6bbbf7e7bfb8750090f574423506907fae10a73'
-    );
-    // $plugin_update = new WP_GitHub_Updater( $config );
-    // ob_start();
-    // print_r($plugin_update);
-}
