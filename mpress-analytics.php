@@ -61,7 +61,7 @@ function update_mpress_analytics() {
             'api_url'               => 'https://api.github.com/repos/MDMDevOps/Google-Analytics-Plugin',
             'raw_url'               => 'https://raw.github.com/MDMDevOps/Google-Analytics-Plugin/master',
             'github_url'            => 'https://github.com/MDMDevOps/Google-Analytics-Plugin',
-            'zip_url'               => 'https://github.com/MDMDevOps/Google-Analytics-Plugin/zipfile/master',
+            'zip_url'               => 'https://github.com/MDMDevOps/Google-Analytics-Plugin/zipball/master',
             'sslverify'             => false,
             'requires'              => '4.0',
             'tested'                => '4.3',
