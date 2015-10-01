@@ -2,3 +2,24 @@
  * All of the CSS for your admin-specific functionality should be
  * included in this file.
  */
+input[type="text"]:disabled, textarea:disabled {
+    background: #ddd;
+}
+input[type="text"], textarea {
+    width: 100%;
+    max-width: 500px;
+}
+ div.mpress-analytics-logo {
+    width: 100%;
+    max-width: 720px;
+}
+div.mpress-analytics-logo img {
+    max-width: 100%;
+    height: auto;
+}
+label.mpress-radio-label {
+    margin-right: 1.5em;
+}
+p.description.margin-top {
+    margin-top: 1.5em;
+}

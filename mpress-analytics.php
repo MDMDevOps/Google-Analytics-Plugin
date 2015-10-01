@@ -16,7 +16,7 @@
  * Plugin Name: Mpress Google Analytics
  * Plugin URI: http://www.midwestdigitalmarketing.com
  * Description: This is a short description of what the plugin does. It's displayed in the WordPress admin area.
- * Version: 1.0.1
+ * Version: 1.0.3
  * Author: Midwest Digital Marketing
  * Author URI: http://www.midwestdigitalmarketing.com
  * License: GPL-2.0+
@@ -71,7 +71,7 @@ function update_mpress_analytics() {
         $plugin_update = new WP_GitHub_Updater( $config );
     }
 }
-update_mpress_analytics();
+add_action( 'init', 'update_mpress_analytics' );
 
 register_activation_hook( __FILE__, 'activate_mpress_analytics' );
 register_deactivation_hook( __FILE__, 'deactivate_mpress_analytics' );
@@ -98,7 +98,5 @@ function run_mpress_analytics() {
 
 }
 run_mpress_analytics();
-
-// Update Plugin
 
 

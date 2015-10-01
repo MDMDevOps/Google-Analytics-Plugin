@@ -41,6 +41,7 @@ class Mpress_Analytics_Admin {
     private $version;
     private $settings_key;
     private $default_settings;
+    private $img_path;
 
     /**
      * Initialize the class and set its properties.
@@ -54,6 +55,7 @@ class Mpress_Analytics_Admin {
         $this->plugin_name = $plugin_name;
         $this->version = $version;
         $this->settings_key = $this->plugin_name . '-settings';
+        $this->img_path = plugins_url( dirname(__FILE__) );
 
     }
 
@@ -104,8 +106,8 @@ class Mpress_Analytics_Admin {
     }
     public function add_settings_page() {
         add_options_page(
-            __( 'Google Analytics Settings' ), // Page title
-            __( 'Google Analytics' ), // menu title
+            __( 'MPress Analytics Settings' ), // Page title
+            __( 'MPress Analytics' ), // menu title
             'manage_options', // capabilities
             $this->settings_key, //menu-slug
             array( $this, 'display_settings_page' ) // callback function
@@ -163,7 +165,7 @@ class Mpress_Analytics_Admin {
         // register_setting( $option_group, $option_name, $sanitize_callback );
         register_setting( $this->settings_key, $this->settings_key );
         // Add Section: add_settings_section( $id, $title, $callback, $page )
-        add_settings_section( 'mpress_analytics_settings', 'Google Analytics Settings', array( $this, 'settings_page_description' ), $this->settings_key );
+        add_settings_section( 'mpress_analytics_settings', null, array( $this, 'settings_page_description' ), $this->settings_key );
         foreach( $this->settings as $key => $setting ) {
             $setting['key'] = $key;
             // add_settings_field( $id, $title, $callback, $page, $section, $args );

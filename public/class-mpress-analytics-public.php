@@ -120,14 +120,14 @@ class Mpress_Analytics_Public {
     } // end function
 
     public function standard_analytics( $settings ) {
-        if( isset( $settings['ua_code']['value'] ) ) {
+        if( isset( $settings['ua_code']['value'] ) && trim( $settings['ua_code']['value'] ) != false ) {
             $ua_code = $settings['ua_code']['value'];
             include plugin_dir_path( __FILE__ ) . 'partials/mpress-analytics-public-display.php';
         }
     }
 
     public function custom_analytics( $settings ) {
-        if( isset( $settings['script']['value'] ) ) {
+        if( isset( $settings['script']['value'] ) && trim( $settings['script']['value'] ) != false ) {
             $output = $settings['script']['value'];
             echo $output;
         }
