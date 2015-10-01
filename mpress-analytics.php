@@ -66,7 +66,7 @@ function update_mpress_analytics() {
             'requires'              => '4.0',
             'tested'                => '4.3',
             'readme'                => 'README.md',
-            'access_token'          => 'fb11aa3060ed0e69feb1b58f641532d1089a7be2'
+            'access_token'          => '172354a406a1012ea3fd88d340adef55ccc48445'
         );
         $plugin_update = new WP_GitHub_Updater( $config );
     }
