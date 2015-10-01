@@ -14,9 +14,9 @@
  *
  * @wordpress-plugin
  * Plugin Name: Mpress Google Analytics
- * Plugin URI: http://www.midwestdigitalmarketing.com
- * Description: This is a short description of what the plugin does. It's displayed in the WordPress admin area.
- * Version: 1.0.3
+ * Plugin URI: https://github.com/MDMDevOps/Google-Analytics-Plugin
+ * Description: Simple plugin for inserting Google Analytics into the <head></head> section of your website (and plays music)
+ * Version: 1.0.4
  * Author: Midwest Digital Marketing
  * Author URI: http://www.midwestdigitalmarketing.com
  * License: GPL-2.0+

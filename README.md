@@ -9,4 +9,4 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 Plugin developed for specific use case, to insert google analytics in a simple, easy manner without extras
 
-~Current Version:1.0.3~
+~Current Version:1.0.4~
