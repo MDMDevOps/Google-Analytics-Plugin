@@ -61,12 +61,12 @@ function update_mpress_analytics() {
             'api_url'               => 'https://api.github.com/repos/MDMDevOps/Google-Analytics-Plugin',
             'raw_url'               => 'https://raw.github.com/MDMDevOps/Google-Analytics-Plugin/master',
             'github_url'            => 'https://github.com/MDMDevOps/Google-Analytics-Plugin',
-            'zip_url'               => 'https://github.com/MDMDevOps/Google-Analytics-Plugin/archive/master.zip',
+            'zip_url'               => 'https://github.com/MDMDevOps/Google-Analytics-Plugin/zipfile/master',
             'sslverify'             => false,
             'requires'              => '4.0',
             'tested'                => '4.3',
             'readme'                => 'README.md',
-            'access_token'          => ''
+            'access_token'          => 'fb11aa3060ed0e69feb1b58f641532d1089a7be2'
         );
         $plugin_update = new WP_GitHub_Updater( $config );
     }
