@@ -54,7 +54,9 @@ function deactivate_mpress_analytics() {
 function update_mpress_analytics() {
     require_once plugin_dir_path( __FILE__ ) . 'includes/class-mpress-analytics-updater.php';
     if ( is_admin() ) {
-        define( 'WP_GITHUB_FORCE_UPDATE', true );
+        if( !defined( 'WP_GITHUB_FORCE_UPDATE' ) ) {
+            define( 'WP_GITHUB_FORCE_UPDATE', true );
+        }
         $config = array(
             'slug'                  => plugin_basename( __FILE__ ),
             'proper_folder_name'    => 'Google-Analytics-Plugin-master',
