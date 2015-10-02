@@ -16,7 +16,7 @@
  * Plugin Name: Mpress Google Analytics
  * Plugin URI: https://github.com/MDMDevOps/Google-Analytics-Plugin
  * Description: Simple plugin for inserting Google Analytics into the <head></head> section of your website (and plays music)
- * Version: 1.0.4
+ * Version: 1.0.5
  * Author: Midwest Digital Marketing
  * Author URI: http://www.midwestdigitalmarketing.com
  * License: GPL-2.0+
@@ -57,7 +57,7 @@ function update_mpress_analytics() {
         define( 'WP_GITHUB_FORCE_UPDATE', true );
         $config = array(
             'slug'                  => plugin_basename( __FILE__ ),
-            'proper_folder_name'    => 'mpress-analytics',
+            'proper_folder_name'    => 'mpress-analytics-master',
             'api_url'               => 'https://api.github.com/repos/MDMDevOps/Google-Analytics-Plugin',
             'raw_url'               => 'https://raw.github.com/MDMDevOps/Google-Analytics-Plugin/master',
             'github_url'            => 'https://github.com/MDMDevOps/Google-Analytics-Plugin',
