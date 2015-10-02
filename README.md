@@ -13,6 +13,7 @@ Plugin developed for specific use case, to insert google analytics in a simple, 
 The plugin contains 2 functions:
 
 1 - Insert the 'standard' Google Analytics tracking code, simply insert the UA-CODE provided in your analytics account
+
 2 - Inert any other type of analytics by pasting in the tracking script into the textbox
 
 ~Current Version:1.0.6~
